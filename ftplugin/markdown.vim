@@ -1,6 +1,7 @@
-if !has('python') || version < 701 || exists('g:tagbar_markdown_loaded')
+if exists('g:tagbar_markdown_loaded')
     finish
 endif
+
 let g:tagbar_markdown_loaded = 1
 
 let cwd = expand('<sfile>:p:h:h')
